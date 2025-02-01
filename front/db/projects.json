@@ -32,5 +32,26 @@
         ],
         "url": "https://pokedex-app.yamirat.com",
         "githubUrl": "https://github.com/AmiratYannis/Full-Pokedex"
+    },
+    {
+        "title": "Portfolio",
+        "banner": "/portfolio.png",
+        "description": "You've arrived at my website, which features my personal and professional projects.",
+        "technologies": [
+            {
+                "name": "Vue.js",
+                "icon": "https://img.icons8.com/color/600/vue-js.png"
+            },
+            {
+                "name": "Node.js",
+                "icon": "https://www.shareicon.net/data/128x128/2015/10/06/112724_development_512x512.png"
+            },
+            {
+                "name": "Typescript",
+                "icon": "https://humancoders-formations.s3.amazonaws.com/uploads/course/logo/2361/thumb_bigger_formation-typescript-avance.png"
+            }
+        ],
+        "url": "",
+        "githubUrl": "https://github.com/AmiratYannis/Portfolio"
     }
 ]

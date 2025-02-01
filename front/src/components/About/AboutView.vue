@@ -3,8 +3,6 @@
         <v-row align="center" justify="center" class="text-center">
             <v-col cols="12" md="8">
                 <h1>ABOUT ME</h1>
-
-
                 <p class="about-text">
                     Hello ! My name is Yannis Amirat and I'm a web developer passionate about new technologies. <br />
                     Welcome to my website, where I introduce my career and demonstrate my expertise in web development.
