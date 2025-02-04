@@ -1,13 +1,11 @@
 <template>
     
-    <v-tooltip location="bottom">
-        <template v-slot:activator="{ props }">
-            <v-avatar size="40" v-bind="props">
-                <v-img :src="techno.icon" :alt="techno.name"></v-img>
-            </v-avatar>
-        </template>
-        <span>{{ techno.name }}</span>
-    </v-tooltip>
+    <v-avatar   size="40"  :rounded="isRounded(techno.name) ? '1' : '0'">
+        <v-img :src="techno.icon" :alt="techno.name"></v-img>
+    </v-avatar>
+            
+       
+
 </template>
 
 
@@ -18,6 +16,18 @@ import {Techno } from '@/types/projectTypes';
 
 defineProps<{techno: Techno}>()
 
+const roundedTechs = ['Javascript', 'Typescript', 'Tailwind CSS'];
+
+const isRounded = (techName: string): boolean => {
+  return roundedTechs.includes(techName);
+};
+
 
 
 </script>
+<style scoped>
+.v-avatar{
+    margin-right: 10px;
+}
+
+</style>

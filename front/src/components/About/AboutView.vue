@@ -2,7 +2,7 @@
     <v-container class="about-section pt-10 pb-10" fluid>
         <v-row align="center" justify="center" class="text-center">
             <v-col cols="12" md="8">
-                <h1>ABOUT ME</h1>
+                <h1 class="text-uppercase ma-2">About me</h1>
                 <p class="about-text">
                     Hello ! My name is Yannis Amirat and I'm a web developer passionate about new technologies. <br />
                     Welcome to my website, where I introduce my career and demonstrate my expertise in web development.

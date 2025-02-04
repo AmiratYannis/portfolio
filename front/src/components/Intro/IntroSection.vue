@@ -45,8 +45,10 @@ methods: {
 
     if (this.isDeleting) {
       this.currentMission = currentText.substring(0, this.currentMission.length - 1);
+      // Get Mission mission that is deleting
     } else {
       this.currentMission = currentText.substring(0, this.currentMission.length + 1);
+      // Get Next Mission that is writing
     }
 
     

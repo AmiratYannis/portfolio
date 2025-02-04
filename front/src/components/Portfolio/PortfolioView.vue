@@ -1,6 +1,7 @@
 <template>
     <v-container class="portfolio primary" fluid>
-        <h1 class="text-center  font-weight-bold mb-6">PORTFOLIO</h1>
+     
+        <h1 class="text-center  font-weight-bold mb-6 text-uppercase ma-2">Portfolio</h1>
 
         <p class="portfolio-desc text-center"> Here, you can consult all the recent personnal and professionnal projects that I developped. </p>
 

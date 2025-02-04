@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Vue.js",
+        "icon": "https://img.icons8.com/color/600/vue-js.png"
+    },
+    {
+        "name": "React",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    },
+    {
+        "name": "Node.js",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+    },
+    {
+        "name": "Javascript",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAq1BMVEX33x4AAAD95R91cw+RhRL64R7/7CD84x//6B9dVwz/6iD85x/45R+upBb14h//7SBJRQl2cA/w3h5BPgjGuhkXFgOxpheBehCUjBPj0x2PhxKjmRVbVgu+shgyLwYpKAXTxRvbzBwfHQRiXQ0jIQVUTgs2NQehnBVRUQsqJAUuKQY2MAZEQAnYxxurnBWPgxIREQNvZQ6AeBBvag5iYg0SEgO3rhcaGgQNCQHNq1PaAAAHNUlEQVR4nO2cb3+iOBCAJbchWf5VkSpoaaG12rtdt9t1a/v9P9mJvbYKE0gQTPZ387zomyryQAiZySSDAYIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCCKGMuJyh7uuyzl3CaO6TwjAtQGIzDcpu3DzbTx6GF//vfjn2/eHUTxZBxfEMEsSX32tcP+jWZHZyereqjKOM8coSfIXcJbWY5MhD/3v0Bf3LOKEm+MIG36pNyTh7KfQb88m52cSaKSFIXPn9Xp7pqHUw9w/6oY8H0sIWtZL5JxPowZlQ3sl5Vcws88oIkTV0B5JC1rWlWdAh6No6NwpCFrWMNCvqGbo/lYSNEJRyZBPFQUt66t7ZqEKKoZkoiy4e2vo7lEVDGnSQtCyJprfiwqG/KqVoZXofRTlDVnaTtAa6m2n8obudUtDy9faTqUNadtbuCPRIPaBtKE9bC041eD1iaxhXUd6/TSd/nq6Ef030xtIyRoSYcQUJzYnhDh24kNPauwyHV4HZy5p6EAZix0b7yNlQZm9Lf97mGiPhGUNPVhw5hy97Eh4HDv6jvZhqawhzUDBu/KrjnoHHdKdEWG+pCGDh6TV4QoN3x/Gy60BN3AgbUhi6GO/gYeM5m//GxlxAwfyhuDHJlA3yYte9zYyJp8oacifoI9loIW7tKae5lfEAbKGYPYiBw1plumOCQ/pwXBATWmge04yjIxSESBruIE+FhvSXdYi25eCOaixSc+bCFlDeOAd/QE3UXZMA8e/i9D8J1F2XJqDhiZkfJs4MbawxonpDfXU+LCIkMwZv0BIx/jg0PutpWZmBBECpPM0a6GhZV2Z7CifaxNlmvbcp3IVKhqQNmQNk/c3fmBMwHSEfM47rDfc8ZhwAzsdeUM+a1S07iLXuMaqMPcUXjYrWuNJYJijgqHkBOnL3CxHlTlg6TKFmUmOKoY0XEgqWrE5jkqVCqLxN8QPU5JRatUmJJJXXEbapyz2KFYMcZV50o0RSWHVqi+ucBet19SANIdy5R7JbxUcp672kZx69SUNVGrbvoe6O5w2NcKOr6B4mf8hc8DHX0pUiodyvf1NK8MBddPacLGkqPUutjPcfS+Yv8oa/tRa99XWsJizF6duSoy9/kXE59nacPduDGSK9gt0lmCeYrj7tjuRK9yP9D2KpxkWjhk4PVziWl+p8KmGgwHjyWNz9O9ru4mnG+7eHTz0lw2GC203sQvDQbFSKBKm/d9Idd3EjgyL1XpZ7Xj1StcCms4Md43Vzus6nbDzc5ejQ8PigczEL4+tpmbaqWHxPAoHOiNNSY2ODWuSAEtNvWnnhgMCF2pqexC7NxyQSqXwG4IKqr7pwXDgPICGmiqo+jCk8KOoaeCmbMiC5oPChRvzfrMZohZCwII1oSF1optRY7DngKtPeq2CY95a0ETgokPRyfCk+HhjsMfBpaanNf2GX9wNNQSJBA5e7jnoQIK3aeCXpoZ6bkMWFOuvH+EhhQeGdlCnQO3J83///towiobLi/pqpfQ9fwu/juDlTNWOndqHQ85Z/aPoggdd9dOXOuv3HTqG0KhJsI5iXTYk4XGP9KNOkcFvi16G3iQ8qHyNgXYKdzTlARbzKkk1v2YczeFguHLZToe6k5fDn8gqF1Gw5u716DmjTgosSouFd5ELpjW6zwvzvHQtn5OyogO+DY/jcS6YpHgK4FYnCi5uuo4tiPdY+ZHLUjGoI9jFIz44dybcZeAytauOux5X8PFNt/EhtbfP0M9MLj6aCmW2KFo9XAsjeFL3DKPjDZN2h8yFH+92WErLDfSDcRrul3xyO5wIF2cfjg5obT3bYpYFNmeMUlYcclsz69ZteEiqLfST4a8vs8enmgTn01EnwhsmYF7Hv+KV769mm9rl7Pfd5trqL3wTpdRm+4X4RwftuCdtuvB1LErDTsH6UTVuO8/SBApztCUqI4NTLtc73Ye/gpGTDNUuoa4/laOPuSdHfbecN6DBndc08dJEL/OHLc/qBgr+aKhSJlSlnznglhvmwFebJjIFwiKGPc3jszZ9oOhq06R913Xb2/ovLkjN1iDeLYeF4q0gG+ix2ESpVrLguiYDQz2Vzeg+ea1ENJ0qqjXUZX1zctrs9TXuuXSPJXLVIHuumhYTklB5M6z+yy8pECYKiJtPhvKJUodzc5b9L+vmZQ9Yym0FxIL5S/PB3q/ZmSr2qbttjA5e5tJbAZEA3Euows9ZeL5ZX+altbUg33yli83crLFbHfpn9NuflJ3MBaO429naUW1MlHvRVLy85H6VACmcvqHsIkxnd0cdxe3DdJJctNtmnJKLMIo3y+Mq0+fxaJV5tradyylx3TBZR+l2m0brJHRP3EWdEu4GSZ6l24nvb9MsDz2X69+XnRaw4k+Xx2Osw0MiCIIgCIIgCIIg/y/+BbPgaVSoamDeAAAAAElFTkSuQmCC"
+    },
+    {
+        "name": "Typescript",
+        "icon": "https://humancoders-formations.s3.amazonaws.com/uploads/course/logo/2361/thumb_bigger_formation-typescript-avance.png"
+    },
+    {
+        "name": "Tailwind CSS",
+        "icon": "data:image/png;base64,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"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+    },
+    {
+        "name": "SQLite",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+    },
+    {
+        "name": "Java",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+    }
+]
