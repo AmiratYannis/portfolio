@@ -4,8 +4,6 @@
         <v-img :src="techno.icon" :alt="techno.name"></v-img>
     </v-avatar>
             
-       
-
 </template>
 
 

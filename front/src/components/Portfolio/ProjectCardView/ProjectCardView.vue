@@ -29,8 +29,8 @@
 
         <v-card-actions class="d-flex justify-center pb-5">
 
-            <v-btn v-if="project.title !== 'Portfolio'" :href="project.url" target="_blank" variant="tonal">
-                Go to website
+            <v-btn class="pl-2" v-if="project.url" :href="project.url" target="_blank" variant="tonal">
+                  Go to website                             
             </v-btn>
             <v-btn :href="project.githubUrl" target="_blank" icon color="black">
                 <v-icon>mdi-github</v-icon>
