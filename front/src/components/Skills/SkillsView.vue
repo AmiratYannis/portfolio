@@ -13,7 +13,7 @@
 
 
         <v-row class="d-flex justify-center">
-            <v-btn @click="openResume"  class=" text-uppercase ma-2 text-white" outlined>See my Resume</v-btn>
+            <v-btn @click="openResume"  class=" text-uppercase ma-2 text-white px-2" outlined> See my Resume </v-btn>
         </v-row>
 
 
