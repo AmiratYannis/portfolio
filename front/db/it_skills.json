@@ -28,10 +28,6 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materializecss/materializecss-original.svg"
     },
     {
-        "name": "Vuetify",
-        "icon": "https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.svg"
-    },
-    {
         "name": "PostgreSQL",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
     },

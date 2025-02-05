@@ -39,8 +39,8 @@ defineProps<{techno: Techno}>();
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 16px rgb(6, 16, 70);
+  
 }
 
 </style>

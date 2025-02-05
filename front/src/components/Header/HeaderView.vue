@@ -2,11 +2,11 @@
     <v-app-bar flat color="primary" dark>
         <v-container>
             <v-row align="center">
-                <v-col class="d-flex align-center ma-2">
-                    <v-btn icon @click="refreshPage">
+                <v-col class="d-flex align-center ma-2 mb-10">
+                    <v-btn class="logo" variant="text" @click="refreshPage">
                         <v-img
                             src="https://t4.ftcdn.net/jpg/04/03/45/35/240_F_403453559_s9TR8B6lvXNkvWM69ZJr0hlkxidbf6cN.jpg"
-                            class="logo ma-2" height="60" width="60" contain></v-img>
+                            class="ma-2" height="52" width="80"></v-img>
                     </v-btn>
 
 
@@ -41,3 +41,16 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.logo {
+  transition: none !important;        /* Disable all transitions */
+  background-color: transparent !important;  /* Remove background hover effect */
+  box-shadow: none !important;        /* Remove shadow effect */
+}
+
+.logo:hover {
+  background-color: transparent !important;  /* No color change on hover */
+  box-shadow: none !important;               /* No shadow on hover */
+}
+</style>
