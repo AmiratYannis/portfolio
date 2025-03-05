@@ -40,6 +40,10 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
     },
     {
+        "name": "MongoDB",
+        "icon": "https://www.svgrepo.com/show/331488/mongodb.svg"
+    },
+    {
         "name": "Java",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
     }

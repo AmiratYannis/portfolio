@@ -16,7 +16,7 @@
                     <v-btn class="text-uppercase ma-2" @click="scrollToSection('about-section')">About</v-btn>
                     <v-btn class="text-uppercase ma-2" @click="scrollToSection('portfolio')">Portfolio</v-btn>
                     <v-btn class="text-uppercase ma-2" @click="scrollToSection('skills')">skills</v-btn>
-                    <v-btn class="text-uppercase ma-2" :to="'.contact'">
+                    <v-btn class="text-uppercase ma-2" @click="scrollToSection('contact')">
                         Contact
                     </v-btn>
                 </v-col>
@@ -52,5 +52,10 @@ export default {
 .logo:hover {
   background-color: transparent !important;  /* No color change on hover */
   box-shadow: none !important;               /* No shadow on hover */
+}
+
+.v-btn{
+      background-color: transparent !important;  /* No color change on hover */
+
 }
 </style>

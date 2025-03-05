@@ -11,6 +11,10 @@
             {
                 "name": "Node.js",
                 "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "https://www.svgrepo.com/show/331488/mongodb.svg"
             }
         ],
         "url": "https://todolist.yamirat.com",
@@ -30,7 +34,7 @@
                 "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materializecss/materializecss-original.svg"
             }
         ],
-        "url": "https://pokedex-app.yamirat.com",
+        "url": "https://pokedex.yamirat.com",
         "githubUrl": "https://github.com/AmiratYannis/Full-Pokedex"
     },
     {

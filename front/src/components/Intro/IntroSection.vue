@@ -6,12 +6,12 @@
 
             <p class="intro-mission">I'm looking for mission as <span class="typewriter">{{ currentMission }}</span></p>
             <v-row justify="center" class="social-icons">
-                <a href="https://www.linkedin.com/in/yannis-amirat-968386175/" target="_blank">
+                <a href="https://www.linkedin.com/in/yannis-amirat-968386175/" target="_blank" class="linkedin">
                     <v-icon large>
                         mdi-linkedin
                     </v-icon>
                 </a>
-                <a href="https://github.com/AmiratYannis" target="_blank">
+                <a href="https://github.com/AmiratYannis" target="_blank" class="github">
                     <v-icon large>
                         mdi-github
                     </v-icon>
@@ -108,15 +108,20 @@ mounted() {
 .v-icon {
     margin: 0 10px;
     cursor: pointer;
-    color: #1e88e5;
 }
 
-.v-icon:hover {
-    color: whitesmoke;
-}
+
 
 a {
     text-decoration: none;
+}
+
+.github{
+  color: white;
+}
+
+.linkedin{
+  color: #1e88e5;
 }
 
 @keyframes blink {

@@ -6,6 +6,7 @@
       <AboutView />
       <PortfolioView/>
       <SkillsView/>
+      <ContactForm/>
     </v-main>
   </v-app>
 </template>
@@ -16,6 +17,7 @@ import HeaderView from './components/Header/HeaderView.vue';
 import AboutView from './components/About/AboutView.vue';
 import PortfolioView from './components/Portfolio/PortfolioView.vue';
 import SkillsView from './components/Skills/SkillsView.vue';
+import ContactForm from './components/ContactForm/ContactForm.vue';
 
 export default {
   name: 'App',
@@ -25,7 +27,8 @@ export default {
     HeaderView,
     AboutView,
     PortfolioView,
-    SkillsView
+    SkillsView,
+    ContactForm
   },
 
   data: () => ({
