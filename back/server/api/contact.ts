@@ -4,6 +4,17 @@ import nodemailer from 'nodemailer';
 import { google } from 'googleapis';
 
 export default defineEventHandler(async (event) => {
+
+    setResponseHeaders(event, {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+    });
+
+    if (event.method === 'OPTIONS') {
+        return { status: 200, message: "CORS Preflight Success" };
+    }
+
     const body = await readBody(event);
     const { name, email, message } = body;
 
@@ -46,13 +57,13 @@ export default defineEventHandler(async (event) => {
         await transporter.sendMail({
             from: `${name} <${email}>`,
             to: config.MAIL_USER,
-            subject: `New Contact Form Message from ${name}`,
-            text: `Message from: \n\n Name: ${name}\n\n Email: ${email}\n\nMessage: \n ${message}`,
+            subject: `New Message from ${name}`,
+            text: `Message from:  ${name} (${email}) \n\n ${message}`,
             replyTo: email,
         });
 
         return { status: 200, message: "Email sent successfully!" };
     } catch (error) {
-        return { status: 500, error: "Error sending email: " + error.message };
+        return { status: 500, error: error.message };
     }
 });

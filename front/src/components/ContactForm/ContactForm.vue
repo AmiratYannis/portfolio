@@ -31,12 +31,12 @@
             <v-col cols="12" md="10">
                     <v-card class="pa-5 mt-15 ml-10 mb-10 contact-form" elevation="3">
                         <p class="text-center text-h5 font-weight-bold - mb-6 ma-2">Do you have a project to discuss? </p>
-                        <v-form class="form-container">
-                                <v-text-field label="Name" class="custom-field"/>
-                                <v-text-field label="E-mail" class="custom-field"/>
-                                <v-textarea label="Message" class="custom-field"/>
+                        <v-form @submit.prevent="sendMessage" class="form-container" >
+                                <v-text-field v-model="contact.name" placeholder="Name" class="custom-field"/>
+                                <v-text-field v-model="contact.email" placeholder="E-mail" class="custom-field"/>
+                                <v-textarea v-model="contact.message" placeholder="Message" class="custom-field" />
                                 <v-row class="d-flex justify-center">
-                                    <v-btn class=" text-uppercase ma-2 text-white px-2-" color="#2b394c-" outlined>Send</v-btn>
+                                    <v-btn type="submit" class=" text-uppercase ma-2 text-white px-2-" color="#2b394c-" outlined>Send</v-btn>
 
                                 </v-row>
                         </v-form>    
@@ -47,7 +47,53 @@
         </v-row>
     </v-container>
     
-</template>-
+</template>
+
+<script lang="ts">
+import {ref, reactive} from "vue";
+import axios from 'axios';
+
+const contact = reactive({
+    name: "",
+    email: "",
+    message: "",
+});
+const successMessage=ref("")
+const errorMessage=ref("")
+
+const sendMessage = () =>{
+    successMessage.value="";
+    errorMessage.value="";
+    
+    axios.post("http://localhost:3000/api/contact",contact)
+        .then((res)=>{
+        
+            if(res.status===200){
+                console.log("success: Your message has been sent successfully!")
+                successMessage.value="Your message has been sent successfully!"
+                contact.name=""
+                contact.email=""
+                contact.message=""
+            }else{
+                console.log("error: Your message failed to send")
+
+                errorMessage.value=`Your message failed to send`
+            }
+        }).catch((err)=>{
+            console.log(`Network error. Please try again!  error: ${err.message}`)
+
+            errorMessage.value="Network error. Please try again."
+        })
+};
+
+export default {
+    setup() {
+        return { contact, successMessage, errorMessage, sendMessage };
+    }
+};
+
+
+</script>
 
 <style>
 .contact{
@@ -65,6 +111,10 @@
 
 .custom-field{
     width: 100%;
+}
+
+.custom-field textarea {
+  padding-top: 15px !important; /* Adjust if necessary */
 }
 
 

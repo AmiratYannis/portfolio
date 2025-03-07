@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite preview",
+    "dev": "vite",
     "build": "vite build",
-    "lint": "vue-cli-service lint",
-    "dev": "vite"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "axios": "^1.8.2",
     "core-js": "^3.8.3",
     "roboto-fontface": "*",
     "vue": "^3.2.13",

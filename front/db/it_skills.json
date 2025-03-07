@@ -4,6 +4,10 @@
         "icon": "https://img.icons8.com/color/600/vue-js.png"
     },
     {
+        "name": "Nuxt",
+        "icon": "https://icon.icepanel.io/Technology/svg/Nuxt-JS.svg"
+    },
+    {
         "name": "React",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     },

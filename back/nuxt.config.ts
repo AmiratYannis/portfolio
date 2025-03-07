@@ -12,6 +12,14 @@ export default defineNuxtConfig({
     OAUTH_CLIENT_SECRET: process.env.OAUTH_CLIENT_SECRET,
     OAUTH_REFRESH_TOKEN: process.env.OAUTH_REFRESH_TOKEN,
     MAIL_USER: process.env.MAIL_USER,
+    public: {
+      API_BASE: 'http://localhost:3000',
+    },
+    nitro: {
+      routeRules: {
+        "/api/**": { cors: true },
+      }
+    }
   },
 
   compatibilityDate: "2025-03-05"
