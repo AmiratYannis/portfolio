@@ -24,6 +24,7 @@ defineProps<{ techno: Techno }>();
 
 <style scoped>
 .skill-card {
+    width: 100%;
     background-color: #2b394c;
     color: white;
     border-radius: 13px;
@@ -37,6 +38,20 @@ defineProps<{ techno: Techno }>();
     min-height: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     gap: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+    .skill-card {
+        margin-left: 40%;
+
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .skill-card {
+            margin-left: 40px;
+    
+        }
 }
 
 .skill-card:hover {

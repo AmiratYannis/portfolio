@@ -5,10 +5,11 @@
                 <h1 class="text-uppercase ma-2">About me</h1>
                 <p class="about-text">
                     Hello ! My name is Yannis Amirat and I'm a web developer passionate about new technologies. <br />
-                    Welcome to my website, where I introduce my career and demonstrate my expertise in web development.
+                    Welcome to my website, where I introduce my experience and demonstrate my expertise in web
+                    development.
                     <br />
-                    I have more than three years of experience in web development where I developed skills in
-                    JavaScript, TypeScript, Node.js, Vue.js, React, HTML5/CSS3, and Java. <br />
+                    I have over three years of experience in web development, where I have developed
+                    skills in JavaScript, TypeScript, Node.js, Vue.js, React, HTML5/CSS3, and Java. <br />
                 </p>
             </v-col>
         </v-row>

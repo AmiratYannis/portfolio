@@ -13,33 +13,49 @@
                 </v-col>
 
                 <v-col class="d-flex justify-end">
-                    <v-btn class="text-uppercase ma-2" @click="scrollToSection('about-section')">About</v-btn>
+                    <v-btn class="text-uppercase ma-2" @click="scrollToSection('about-section')">{{ $t("About")
+                        }}</v-btn>
                     <v-btn class="text-uppercase ma-2" @click="scrollToSection('portfolio')">Portfolio</v-btn>
                     <v-btn class="text-uppercase ma-2" @click="scrollToSection('skills')">skills</v-btn>
                     <v-btn class="text-uppercase ma-2" @click="scrollToSection('contact')">
                         Contact
                     </v-btn>
+                    <v-btn class="ma-2" @click="switchLanguage('en')">
+                        <v-img src="flags/ukusa.jpg" height="25" width="30"></v-img>
+                    </v-btn>
+                    <v-btn class="ma-2" @click="switchLanguage('fr')">
+                        <v-img src="flags/france.png" height="25" width="30"></v-img>
+                    </v-btn>
+
                 </v-col>
             </v-row>
         </v-container>
     </v-app-bar>
 </template>
 
-<script lang="ts">
-export default {
-    name: 'HeaderView',
-    methods: {
-        scrollToSection(sectionClass) {
-            const section = document.querySelector(`.${sectionClass}`); // Select by class name
-            if (section) {
-                section.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-        },
-        refreshPage() {
-            window.location.reload();
-        }
+<script setup>
+import { useI18n } from 'vue-i18n';
+
+// ✅ `useI18n()` must be called at the top inside <script setup>
+const { locale } = useI18n();
+
+// Function to switch language
+const switchLanguage = (lang) => {
+    locale.value = lang; // Change language dynamically
+};
+
+// Function to scroll to sections
+const scrollToSection = (sectionClass) => {
+    const section = document.querySelector(`.${sectionClass}`);
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-}
+};
+
+// Function to refresh the page
+const refreshPage = () => {
+    window.location.reload();
+};
 </script>
 
 <style scoped>

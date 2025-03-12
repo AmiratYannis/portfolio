@@ -5,6 +5,8 @@
       "@/*": [
         "./*"
       ]
-    }
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   }
 }

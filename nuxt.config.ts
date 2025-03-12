@@ -1,5 +1,9 @@
+import en from './i18n/locales/en.json';
+import fr from './i18n/locales/fr.json'
+
 export default defineNuxtConfig({
   css: ['vuetify/styles'],
+
   app: {
     head: {
       link: [
@@ -7,14 +11,22 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   build: {
     transpile: ['vuetify'], // ✅ Fix CSS import issue
   },
+
   vite: {
     define: {
       'process.env.DEBUG': false,
     },
+    server: {
+      watch: {
+        ignored: ['!**/i18n/locales/*.json'] // ✅ Force Vite to watch JSON files
+      }
+    }
   },
+
   nitro: {
     routeRules: {
       "/api/**": {
@@ -37,6 +49,14 @@ export default defineNuxtConfig({
       }
     }
   },
+  compatibilityDate: "2025-03-05",
+  modules: ['@nuxtjs/i18n'],
 
-  compatibilityDate: "2025-03-05"
+  i18n: {
+    lazy: true,
+    langDir: 'i18n/locales/',
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    vueI18n: './i18n/i18n.config.ts' // ✅ Use external Vue I18n config
+  }
 });

@@ -40,7 +40,7 @@
     {
         "title": "Portfolio",
         "banner": "/portfolio.png",
-        "description": "You've arrived at my website, which features my personal and professional projects.",
+        "description": "You're currently consulting my website, which presents my personal and professional projects.",
         "technologies": [
             {
                 "name": "Nuxt",

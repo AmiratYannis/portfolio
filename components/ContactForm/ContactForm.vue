@@ -6,7 +6,7 @@
 
         <v-row>
             <v-col cols="12" md="2">
-                <v-card class="mt-15  contact-icon ">
+                <v-card class="mt-2  contact-icon ">
                     <v-list-item>
                         <v-btn href="https://www.linkedin.com/in/yannis-amirat-968386175/" target="_blank" rounded="0">
                             <v-icon :icon="'mdi-linkedin'" size="30px" class="linkedin mr-10"></v-icon>
@@ -30,15 +30,15 @@
                 </v-card>
             </v-col>
             <v-col cols="12" md="10">
-                <v-card class="pa-5 mt-15 ml-10 mb-10 contact-form">
-                    <p class="text-center text-h5 font-weight-bold - mb-6 ma-2">Do you have a project to discuss? </p>
+                <v-card class="pa-5 mt-2 mb-2 contact-form">
+                    <p class="text-center text-h5 font-weight-bold  mb-6 ma-2">Do you want to discuss a project? </p>
                     <v-form @submit.prevent="sendMessage" class="form-container">
                         <v-text-field v-model="contact.name" placeholder="Name" class="custom-field" />
                         <v-text-field v-model="contact.email" placeholder="E-mail" class="custom-field" />
                         <v-textarea v-model="contact.message" placeholder="Message" class="custom-field" />
                         <v-row class="d-flex justify-center">
-                            <v-btn type="submit" class=" text-uppercase ma-2 text-white px-2-" color="#2b394c-" rounded="1"
-                                outlined>Send</v-btn>
+                            <v-btn type="submit" class=" text-uppercase ma-2 mb-2 text-white px-2-" color="#2b394c-"
+                                rounded="1" outlined>Send</v-btn>
 
                         </v-row>
                     </v-form>
@@ -131,14 +131,26 @@ export default {
 }
 
 .contact-icon {
-    width: 70%;
+    width: 60px;
     background: #2b394c;
 }
 
 .contact-form {
     background-color: #060e2e;
-    color: white
+    color: white;
+    margin-left: 10px
 }
+
+@media only screen and (max-width: 950px) {
+    .contact-icon {
+        margin-left: 40%;
+    }
+
+    .contact-form {
+        margin-left: 2px
+    }
+}
+
 
 .v-icon {
     width: 100px;

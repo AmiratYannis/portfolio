@@ -50,5 +50,13 @@
     {
         "name": "Java",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+    },
+    {
+        "name": "Docker",
+        "icon": "https://cdn-icons-png.flaticon.com/128/15466/15466088.png"
+    },
+    {
+        "name": "AWS",
+        "icon": "https://icon.icepanel.io/Technology/png-shadow-512/AWS.png"
     }
 ]
