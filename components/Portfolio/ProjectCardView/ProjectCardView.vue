@@ -11,11 +11,11 @@
 
 
         <v-card-subtitle class="text-center px-4 project-desc">
-            {{ project.description }}
+            {{ $t(project.description) }}
         </v-card-subtitle>
 
         <v-card-text class="text-center">
-            <h3 class="text-subtitle-1 font-weight-bold mb-2">Technologies used:</h3>
+            <h3 class="text-subtitle-1 font-weight-bold mb-2">{{$t("Technologies used")}}:</h3>
             <v-row justify="center">
                 <v-col v-for="techno in project.technologies" :key="techno.name" cols="auto"
                     class="d-flex flex-column align-center">
@@ -30,7 +30,7 @@
         <v-card-actions class="d-flex justify-center pb-5">
 
             <v-btn class="px-2" v-if="project.url" :href="project.url" target="_blank" variant="tonal" rounded="1">
-                Go to website
+                {{$t("Go to website")}}
             </v-btn>
             <v-btn :href="project.githubUrl" target="_blank" icon color="black">
                 <v-icon>mdi-github</v-icon>

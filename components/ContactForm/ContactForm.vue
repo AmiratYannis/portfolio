@@ -31,14 +31,14 @@
             </v-col>
             <v-col cols="12" md="10">
                 <v-card class="pa-5 mt-2 mb-2 contact-form">
-                    <p class="text-center text-h5 font-weight-bold  mb-6 ma-2">Do you want to discuss a project? </p>
+                    <p class="text-center text-h5 font-weight-bold  mb-6 ma-2">{{$t("Do you want to discuss a project?")}} </p>
                     <v-form @submit.prevent="sendMessage" class="form-container">
-                        <v-text-field v-model="contact.name" placeholder="Name" class="custom-field" />
+                        <v-text-field v-model="contact.name"  :placeholder="t('Name')" class="custom-field" />
                         <v-text-field v-model="contact.email" placeholder="E-mail" class="custom-field" />
                         <v-textarea v-model="contact.message" placeholder="Message" class="custom-field" />
                         <v-row class="d-flex justify-center">
                             <v-btn type="submit" class=" text-uppercase ma-2 mb-2 text-white px-2-" color="#2b394c-"
-                                rounded="1" outlined>Send</v-btn>
+                                rounded="1" outlined>{{$t("Send")}}</v-btn>
 
                         </v-row>
                     </v-form>
@@ -54,43 +54,45 @@
 <script lang="ts">
 import { ref, reactive } from "vue";
 import axios from 'axios';
-
-const contact = reactive({
-    name: "",
-    email: "",
-    message: "",
-});
-const successMessage = ref("")
-const errorMessage = ref("")
-
-const sendMessage = () => {
-    successMessage.value = "";
-    errorMessage.value = "";
-
-    axios.post("http://localhost:3000/api/contact", contact)
-        .then((res) => {
-
-            if (res.status === 200) {
-                console.log("success: Your message has been sent successfully!")
-                successMessage.value = "Your message has been sent successfully!"
-                contact.name = ""
-                contact.email = ""
-                contact.message = ""
-            } else {
-                console.log("error: Your message failed to send")
-
-                errorMessage.value = `Your message failed to send`
-            }
-        }).catch((err) => {
-            console.log(`Network error. Please try again!  error: ${err.message}`)
-
-            errorMessage.value = "Network error. Please try again."
-        })
-};
+import {useI18n} from 'vue-i18n';
 
 export default {
     setup() {
-        return { contact, successMessage, errorMessage, sendMessage };
+        const { t } = useI18n(); // ✅ Correctly call useI18n() at the top of setup()
+        
+        const contact = reactive({
+            name: "",
+            email: "",
+            message: "",
+        });
+
+        const successMessage = ref("");
+        const errorMessage = ref("");
+
+        const sendMessage = () => {
+            successMessage.value = "";
+            errorMessage.value = "";
+
+            axios.post("http://localhost:3000/api/contact", contact)
+                .then((res) => {
+                    if (res.status === 200) {
+                        console.log("success: Your message has been sent successfully!");
+                        successMessage.value = t("Your message has been sent successfully!"); // ✅ Translate message
+                        contact.name = "";
+                        contact.email = "";
+                        contact.message = "";
+                    } else {
+                        console.log("error: Your message failed to send");
+                        errorMessage.value = t("Your message failed to send"); // ✅ Translate message
+                    }
+                })
+                .catch((err) => {
+                    console.log(`Network error. Please try again!  error: ${err.message}`);
+                    errorMessage.value = t("Network error. Please try again."); // ✅ Translate message
+                });
+        };
+
+        return { contact, successMessage, errorMessage, sendMessage, t }; // ✅ Ensure `t` is returned for template use
     }
 };
 

@@ -1,6 +1,6 @@
 <template>
     <v-container class="skills primary" fluid>
-        <h1 class="text-center  font-weight-bold mb-6 text-uppercase ma-2">Technical Skills</h1>
+        <h1 class="text-center  font-weight-bold mb-6 text-uppercase ma-2">{{$t("Technical Skills")}}</h1>
 
 
         <v-row class="ma-0 pa-0">
@@ -13,7 +13,7 @@
 
 
         <v-row class="d-flex justify-center mb-5">
-            <v-btn @click="openResume" class=" text-uppercase ma-2 text-white px-2" rounded="1" outlined> See my Resume
+            <v-btn @click="openResume" class=" text-uppercase ma-2 text-white px-2" rounded="1" outlined> {{$t("See my resume")}}
             </v-btn>
         </v-row>
 
@@ -26,6 +26,7 @@
 import { Techno } from '@/types/projectTypes';
 import { ref, onMounted } from 'vue';
 import SkillCardView from '@/components/Skills/SkillsCards/SkillCardView.vue';
+import { useI18n } from 'vue-i18n';
 
 
 
@@ -35,6 +36,7 @@ export default {
     },
     setup() {
         const skills = ref<Techno[]>([])
+        const {t}=useI18n()
 
         onMounted(async () => {
             try {
@@ -48,7 +50,7 @@ export default {
 
 
         const openResume = (): void => {
-            const documentUrl = 'CV Yannis Amirat 7 EN.pdf';
+            const documentUrl = t('CV Yannis Amirat 7 EN.pdf');
             window.open(documentUrl, '_blank');
         };
 

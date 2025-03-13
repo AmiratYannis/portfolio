@@ -16,7 +16,7 @@
                     <v-btn class="text-uppercase ma-2" @click="scrollToSection('about-section')">{{ $t("About")
                         }}</v-btn>
                     <v-btn class="text-uppercase ma-2" @click="scrollToSection('portfolio')">Portfolio</v-btn>
-                    <v-btn class="text-uppercase ma-2" @click="scrollToSection('skills')">skills</v-btn>
+                    <v-btn class="text-uppercase ma-2" @click="scrollToSection('skills')">{{$t("skills")}}</v-btn>
                     <v-btn class="text-uppercase ma-2" @click="scrollToSection('contact')">
                         Contact
                     </v-btn>

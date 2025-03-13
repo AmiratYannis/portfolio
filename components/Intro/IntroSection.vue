@@ -2,9 +2,9 @@
     <v-row justify="center" class="intro primary" fluid>
         <v-col cols="12" md="8" class="text-center">
             <h1 class="intro-title">YANNIS AMIRAT</h1>
-            <p class="intro-subtitle">Web Developer </p>
+            <p class="intro-subtitle">{{  $t("Web Developer")}} </p>
 
-            <p class="intro-mission">I'm looking for mission as <span class="typewriter">{{ currentMission }}</span></p>
+            <p class="intro-mission">{{$t("I'm looking for mission as")}} <span class="typewriter">{{ $t(currentMission) }}</span></p>
             <v-row justify="center" class="social-icons">
                 <a href="https://www.linkedin.com/in/yannis-amirat-968386175/" target="_blank" class="linkedin">
                     <v-icon :icon="'mdi-linkedin'" size="30px"></v-icon>
@@ -28,8 +28,8 @@ export default {
 
         return {
             projects: [
-                "Fullstack Developer",
-                "Front-end Developer",
+                this.$t("Fullstack Developer"),
+                this.$t("Front-end Developer"),
             ],
             currentMission: "",
             currentIndex: 0,
@@ -38,23 +38,23 @@ export default {
     },
     methods: {
         type() {
-            const currentText = this.projects[this.currentIndex];
+            const currentText = this.$t(this.projects[this.currentIndex]);
 
             if (this.isDeleting) {
-                this.currentMission = currentText.substring(0, this.currentMission.length - 1);
+                this.currentMission = this.$t(currentText.substring(0, this.currentMission.length - 1));
                 // Get Mission mission that is deleting
             } else {
-                this.currentMission = currentText.substring(0, this.currentMission.length + 1);
+                this.currentMission = this.$t(currentText.substring(0, this.currentMission.length + 1));
                 // Get Next Mission that is writing
             }
 
 
             let typingSpeed = this.isDeleting ? 100 : 150;
 
-            if (!this.isDeleting && this.currentMission === currentText) {
+            if (!this.isDeleting && this.$t(this.currentMission) === this.$t(currentText)) {
                 typingSpeed = 2000;
                 this.isDeleting = true;
-            } else if (this.isDeleting && this.currentMission === "") {
+            } else if (this.isDeleting && this.$t(this.currentMission) === "") {
                 this.isDeleting = false;
                 this.currentIndex = (this.currentIndex + 1) % this.projects.length;
                 typingSpeed = 500;
