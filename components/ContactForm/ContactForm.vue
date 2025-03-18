@@ -14,7 +14,7 @@
                     </v-list-item>
                     <v-list-item>
 
-                        <v-btn href="mailto:yannis.amirat@edu.esiee.fr" rounded="0">
+                        <v-btn href="mailto:me@yamirat.com" rounded="0">
                             <v-icon :icon="'mdi-email'" size="30px" class="email mr-10"></v-icon>
 
                         </v-btn>
