@@ -6,7 +6,7 @@
                     <v-btn class="logo" variant="text" @click="refreshPage">
                         <v-img
                             src="https://t4.ftcdn.net/jpg/04/03/45/35/240_F_403453559_s9TR8B6lvXNkvWM69ZJr0hlkxidbf6cN.jpg"
-                            class="ma-2" height="52" width="80"></v-img>
+                            class="ma-2" height="42" width="70"></v-img>
                     </v-btn>
 
 

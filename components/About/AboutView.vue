@@ -4,10 +4,10 @@
             <v-col cols="12" md="9">
                 <h1 class="text-uppercase ma-2">{{$t("About me")}}</h1>
                 <p class="about-text">
-                    {{$t("Hello")}} ! {{$t("My name is Yannis Amirat and I'm a web developer with a passion for new technologies.")}} <br />
-                    {{$t("Welcome to my website, where I introduce my experience and demonstrate my expertise in web development.")}}
+                    {{$t("Hello")}} ! {{$t("My name is Yannis Amirat and I am a web developer with a passion for new technologies.")}} <br />
+                    {{$t("Welcome to my website, where I share my experience and showcase my expertise in web development.")}}
                     <br />
-                    {{$t("I have over three years of experience in web development, where I have developed skills in JavaScript, TypeScript, Node.js, Vue.js, React, HTML5/CSS3, and Java.")}} <br />
+                    {{$t("I have over three years of experience in web development, where I have improved my skills in JavaScript, TypeScript, Node.js, Vue.js, React, and Java.")}} <br />
                 </p>
             </v-col>
         </v-row>

@@ -3,7 +3,7 @@
 
         <h1 class="text-center  font-weight-bold mb-6 text-uppercase ma-2">Portfolio</h1>
 
-        <p class="portfolio-desc text-center"> {{$t("Here, you can consult all the recent personnal and professionnal projects that I've worked on.")}} </p>
+        <p class="portfolio-desc text-center"> {{$t("Here, you can consult all my recent personal and professional projects.")}} </p>
 
 
 

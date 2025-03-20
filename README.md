@@ -1,75 +1,53 @@
-# Nuxt Minimal Starter
+# Personnal portfolio website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is my personal portfolio website, developped in Nuxt and deployed on AWS Elastic Beanstalk. 
+It showcases my skills, projects and experience as a Web Developer. 
 
-## Setup
+### Security and Environment 
 
-Make sure to install dependencies:
+For security resasons, the file server/api/contact.ts, which handles sending message from contact form, is not included in this respository. It has been adeed to .gitignore to prevent the exposure of sensitive data. 
 
-```bash
-# npm
+- The backend code is deployed on AWS and is not accessible or editable by users
+- All credentials are securely stored in AWS Secrets Manager
+
+
+### Docker
+
+To run container for my full-stack portfolio app developped in Nuxt, you should first [install Docker](https://docs.docker.com/get-docker/). 
+
+Once Docker is installed, you can run the container by using this following command at the root of the projet: 
+
+```
+
+```
+
+### Node JS, NPM
+
+My personnal portolio website is developped with Nuxt and runs with Node.js. [Install Node.js](https://nodejs.org/en/) on your environment.
+
+Once Node.js is installed, install npm dependencies
+
+```
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+To run this project with npm, you should run this following command: 
 
-Start the development server on `http://localhost:3000`:
 
-```bash
-# npm
+```
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+### Compiles and minifies for production
 
-Build the application for production:
+To build project for production, you have to use the following command: 
 
-```bash
-# npm
+```
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+After that, you can run the project for production with this command: 
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+node .output/server/index.mjs
+```
