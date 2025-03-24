@@ -57,6 +57,7 @@ import WebTechnoView from '@/components/Portfolio/ProjectCardView/WebTechnoView/
 
 defineProps<{ project: Project }>();
 
+
 </script>
 
 <style scoped>

@@ -36,6 +36,7 @@ const projects = ref<Project[]>([]);
 onMounted(async () => {
     try {
         const response = await fetch('/db/projects.json');
+        console.log(response)
         projects.value = await response.json();
     } catch (error) {
         console.error("Error loading projects.json:", error);

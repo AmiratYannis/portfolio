@@ -2,7 +2,7 @@
     <v-row justify="center" class="intro primary" fluid>
         <v-col cols="12" md="8" class="text-center">
             <h1 class="intro-title">YANNIS AMIRAT</h1>
-            <p class="intro-subtitle">{{  $t("Web Developer")}} </p>
+            <p class="intro-subtitle">{{  $t("Web developer")}} </p>
 
             <p class="intro-mission">{{$t("I'm looking for mission as")}} <span class="typewriter">{{ $t(currentMission) }}</span></p>
             <v-row justify="center" class="social-icons">

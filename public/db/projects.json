@@ -21,9 +21,9 @@
         "githubUrl": "https://github.com/AmiratYannis/TodoList"
     },
     {
-        "title": "Pokedex",
+        "title": "Pokédex",
         "banner": "https://preview.redd.it/pokemon-go-dark-mode-icon-ios18-v0-n9nsl52codbe1.jpeg?auto=webp&s=9b4bb0b8726bcb687923ec0aff71ec56f958dfcb",
-        "description": "A Pokedex app that allows users to consult and search Pokémon to view their stats",
+        "description": "A Pokédex app that allows users to consult and search Pokémon to view their stats",
         "technologies": [
             {
                 "name": "React",
