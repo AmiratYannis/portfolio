@@ -28,7 +28,7 @@ export default {
 
         return {
             projects: [
-                this.$t("Fullstack Developer"),
+                this.$t("Full-stack Developer"),
                 this.$t("Front-end Developer"),
             ],
             currentMission: "",
