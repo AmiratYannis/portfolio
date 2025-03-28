@@ -24,10 +24,10 @@
                 </v-col>
                 
                 <v-col cols="auto" class="desktop-nav">
-                    <v-btn class="text-uppercase mx-2" variant="text" @click="scrollTo('about-section')">{{ $t("About") }}</v-btn>
-                    <v-btn class="text-uppercase mx-2" variant="text" @click="scrollTo('portfolio')">Portfolio</v-btn>
-                    <v-btn class="text-uppercase mx-2" variant="text" @click="scrollTo('skills')">{{ $t("skills") }}</v-btn>
-                    <v-btn class="text-uppercase mx-2" variant="text" @click="scrollTo('contact')">Contact</v-btn>
+                    <v-btn class="text-uppercase mx-2" variant="text" @click="scrollToSection('about-section')">{{ $t("About") }}</v-btn>
+                    <v-btn class="text-uppercase mx-2" variant="text" @click="scrollToSection('portfolio')">Portfolio</v-btn>
+                    <v-btn class="text-uppercase mx-2" variant="text" @click="scrollToSection('skills')">{{ $t("skills") }}</v-btn>
+                    <v-btn class="text-uppercase mx-2" variant="text" @click="scrollToSection('contact')">Contact</v-btn>
                     <v-btn icon class="mx-2" @click="switchLanguage('en')">
                         <v-img src="/flags/ukusa.jpg" height="24" width="30" alt="EN" />
                     </v-btn>
@@ -46,22 +46,18 @@
     class="hidden-md-and-up mobile-nav"
     >
     <v-list nav>
-        <v-list-item @click="scrollTo('about-section')">
+        <v-list-item @click="scrollToSection('about-section')">
             <v-list-item-title class="text-white text-uppercase">{{ $t("About") }}</v-list-item-title>
         </v-list-item>
-        <v-list-item @click="scrollTo('portfolio')">
+        <v-list-item @click="scrollToSection('portfolio')">
             <v-list-item-title class="text-white text-uppercase">Portfolio</v-list-item-title>
         </v-list-item>
-        <v-list-item @click="scrollTo('skills')">
+        <v-list-item @click="scrollToSection('skills')">
             <v-list-item-title class="text-white text-uppercase">{{ $t("skills") }}</v-list-item-title>
         </v-list-item>
-        <v-list-item @click="scrollTo('contact')">
+        <v-list-item @click="scrollToSection('contact')">
             <v-list-item-title class="text-white text-uppercase">Contact</v-list-item-title>
         </v-list-item>
-        
-        
-        
-        
     </v-list>
 </v-navigation-drawer>
 </template>
@@ -73,18 +69,24 @@ import { useI18n } from 'vue-i18n'
 const drawer = ref(false)
 const { locale } = useI18n()
 
+
+// Function to switch language
 const switchLanguage = (lang) => {
-    locale.value = lang
-}
+    locale.value = lang; // Change language dynamically
+};
 
-const scrollTo = (sectionClass) => {
-    const el = document.querySelector(`.${sectionClass}`)
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-}
+// Function to scroll to sections
+const scrollToSection = (sectionClass) => {
+    const section = document.querySelector(`.${sectionClass}`);
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+};
 
+// Function to refresh the page
 const refreshPage = () => {
-    window.location.reload()
-}
+    window.location.reload();
+};
 </script>
 
 <style scoped>
