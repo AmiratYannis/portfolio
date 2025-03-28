@@ -4,7 +4,7 @@ You can consult my personnal portfolio website in this link: https://yamirat.com
 
 # Personnal portfolio website
 
-This is my personal portfolio website, developped in Nuxt and deployed on AWS Elastic Beanstalk. 
+This is my personal portfolio website, developped in Nuxt and deployed on AWS EC2. 
 It showcases my skills, projects and experience as a Web Developer. 
 
 ### Security and Environment 
