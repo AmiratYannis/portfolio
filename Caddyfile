@@ -1,0 +1,3 @@
+yamirat.com {
+  reverse_proxy portfolio-app:3000
+}
