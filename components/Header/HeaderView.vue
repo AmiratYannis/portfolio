@@ -3,7 +3,7 @@
         <v-container>
             <v-row align="center" class="justify-space-between">
                 <v-col class="d-flex align-center" cols="auto">
-                    <v-app-bar-nav-icon class="hidden-md-and-up"/>
+                    <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer" />
                     <v-btn class="logo-btn" variant="text" @click="refreshPage">
                         <v-img
                         src="https://t4.ftcdn.net/jpg/04/03/45/35/240_F_403453559_s9TR8B6lvXNkvWM69ZJr0hlkxidbf6cN.jpg"
@@ -40,6 +40,7 @@
     </v-app-bar>
     
     <v-navigation-drawer
+    v-model="drawer"
     temporary
     location="top"
     class="hidden-md-and-up mobile-nav"
@@ -62,8 +63,12 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+
+const drawer = ref(false)
 const { locale } = useI18n()
+
 
 const switchLanguage = (lang) => {
     locale.value = lang; 
