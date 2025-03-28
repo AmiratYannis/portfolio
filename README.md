@@ -1,3 +1,7 @@
+# Demo
+
+You can consult my personnal portfolio website in this link: https://yamirat.com/
+
 # Personnal portfolio website
 
 This is my personal portfolio website, developped in Nuxt and deployed on AWS Elastic Beanstalk. 
@@ -18,7 +22,7 @@ To run container for my full-stack portfolio app developped in Nuxt, you should 
 Once Docker is installed, you can run the container by using this following command at the root of the projet: 
 
 ```
-
+docker-compose up --build
 ```
 
 ### Node JS, NPM
