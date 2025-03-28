@@ -1,6 +1,3 @@
-import en from './i18n/locales/en.json';
-import fr from './i18n/locales/fr.json'
-
 export default defineNuxtConfig({
   css: ['vuetify/styles'],
 
@@ -43,24 +40,24 @@ export default defineNuxtConfig({
     OAUTH_CLIENT_ID: process.env.OAUTH_CLIENT_ID,
     OAUTH_CLIENT_SECRET: process.env.OAUTH_CLIENT_SECRET,
     OAUTH_REFRESH_TOKEN: process.env.OAUTH_REFRESH_TOKEN,
-    MAIL_USER: process.env.MAIL_USER,
     public: {
-      API_BASE: 'http://localhost:3000',
-    },
-    nitro: {
-      routeRules: {
-        "/api/**": { cors: true },
-      }
+      API_BASE: process.env.NUXT_PUBLIC_API_BASE || '/api'
     }
   },
   compatibilityDate: "2025-03-05",
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/sitemap'],
 
   i18n: {
     lazy: true,
     langDir: 'i18n/locales/',
     defaultLocale: 'en',
     strategy: 'no_prefix',
-    vueI18n: './i18n/i18n.config.ts' // ✅ Use external Vue I18n config
-  }
+    vueI18n: './i18n/i18n.config.ts'
+  },
+
+  sitemap: {
+    siteUrl: 'https://yamirat.com',
+    gzip: true,
+    trailingSlash: false,
+  },
 });

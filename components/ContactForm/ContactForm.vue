@@ -22,7 +22,7 @@
 
                     </v-list-item>
                     <v-list-item>
-                        <v-btn href="https://wa.me/33611037975" rounded="0">
+                        <v-btn href="https://wa.me/33611037975" target="_blank" rounded="0">
                             <v-icon :icon="'mdi-whatsapp'" class="whatsapp mr-10" size="30px"></v-icon>
                         </v-btn>
 
@@ -73,26 +73,26 @@ export default {
             successMessage.value = "";
             errorMessage.value = "";
 
-            axios.post("http://localhost:3000/api/contact", contact)
+            axios.post("https://yamirat.com/api/contact", contact)
                 .then((res) => {
                     if (res.status === 200) {
                         console.log("success: Your message has been sent successfully!");
-                        successMessage.value = t("Your message has been sent successfully!"); // ✅ Translate message
+                        successMessage.value = t("Your message has been sent successfully!"); 
                         contact.name = "";
                         contact.email = "";
                         contact.message = "";
                     } else {
                         console.log("error: Your message failed to send");
-                        errorMessage.value = t("Your message failed to send"); // ✅ Translate message
+                        errorMessage.value = t("Your message failed to send"); 
                     }
                 })
                 .catch((err) => {
                     console.log(`Network error. Please try again!  error: ${err.message}`);
-                    errorMessage.value = t("Network error. Please try again."); // ✅ Translate message
+                    errorMessage.value = t("Network error. Please try again."); 
                 });
         };
 
-        return { contact, successMessage, errorMessage, sendMessage, t }; // ✅ Ensure `t` is returned for template use
+        return { contact, successMessage, errorMessage, sendMessage, t }; 
     }
 };
 
@@ -109,9 +109,7 @@ export default {
 
 .form-container {
     max-width: 400px;
-    /* Set max width */
     margin: 0 auto;
-    /* Center the form */
     text-align: center;
 }
 
@@ -121,7 +119,6 @@ export default {
 
 .custom-field textarea {
     padding-top: 15px !important;
-    /* Adjust if necessary */
 }
 
 

@@ -1,6 +1,5 @@
 <template>
     <div>
-        <HeaderView />
         <IntroSection />
         <AboutView />
         <PortfolioView />
