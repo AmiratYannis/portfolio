@@ -8,7 +8,7 @@
                      <br />
                     {{$t("Welcome to my website, where I share my experience and showcase my expertise in front-end and fullstack development.")}}
                     <br />
-                    {{$t("With over three years of experience, I've built skills in JavaScript, TypeScript, Node.js, Vue.js, React, and Java, working on both front-end and back-end projects.")}} <br />
+                    {{$t("Over the years, I’ve developed skills in JavaScript, TypeScript, Vue.js, React, Node.js, and Java by working on both fullstack and front-end projects.")}} <br />
                 </p>
             </v-col>
         </v-row>
