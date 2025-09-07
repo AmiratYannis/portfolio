@@ -32,7 +32,7 @@
             <v-btn class="px-2" v-if="project.url" :href="project.url" target="_blank" variant="tonal" rounded="1">
                 {{$t("Go to website")}}
             </v-btn>
-            <v-btn :href="project.githubUrl" target="_blank" icon color="black">
+            <v-btn v-if="project.githubUrl" :href="project.githubUrl" target="_blank" icon color="black">
                 <v-icon>mdi-github</v-icon>
             </v-btn>
         </v-card-actions>
